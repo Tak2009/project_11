@@ -23,10 +23,10 @@ london_users.each do |london_user| LondonUser.create(
 end
 
 # Create cities in the city table.
-c1 = CityList.create(:city_name => "London", :city_latitude => 51.509865, :city_longitude => -0.118092)
-c2 = CityList.create(:city_name => "Within 50 mi of London", :city_latitude =>"", :city_longitude =>"")
-c3 = CityList.create(:city_name => "Outside 50 mi of London", :city_latitude => "", :city_longitude => "")
-c4 = CityList.create(:city_name => "Leeds", :city_latitude => 51.509865, :city_longitude => -0.118092)
+c1 = City.create(:city_name => "London", :city_latitude => 51.509865, :city_longitude => -0.118092)
+c2 = City.create(:city_name => "Within 50 mi of London", :city_latitude =>"", :city_longitude =>"")
+c3 = City.create(:city_name => "Outside 50 mi of London", :city_latitude => "", :city_longitude => "")
+c4 = City.create(:city_name => "Leeds", :city_latitude => 51.509865, :city_longitude => -0.118092)
 
 
 total_n = LondonUser.count
@@ -73,7 +73,7 @@ end
 
 
 # dummy data for checking the distance calc function in frontend agisnt google map
-u1001 = User.create(:user_id => 1001, :first_name => "Huddersfield", :last_name => "Station", :latitude => 53.648557, :longitude => -1.784449, :city_list_id => c3.id) # 163.48 mi, same as google map result. this should not be included in the 50 mi group
-u1002 = User.create(:user_id => 1002, :first_name => "Great Portland", :last_name => "Station", :latitude => 51.524262, :longitude => -0.143772, :city_list_id => c1.id) # 1.48 mi, same as google map result. this should be included in the 50 mi group
+u1001 = User.create(:user_id => 1001, :first_name => "Huddersfield", :last_name => "Station", :latitude => 53.648557, :longitude => -1.784449, :city_id => c3.id) # 163.48 mi, same as google map result. this should not be included in the 50 mi group
+u1002 = User.create(:user_id => 1002, :first_name => "Great Portland", :last_name => "Station", :latitude => 51.524262, :longitude => -0.143772, :city_id => c1.id) # 1.48 mi, same as google map result. this should be included in the 50 mi group
 # u1003 = User.create(:user_id => 1003, :first_name => "East Ilsley", :last_name => "", :latitude => 51.533576, :longitude => -1.289984) # 50.41 mi same as google map result. this should not be included in the 50 mi group.
 

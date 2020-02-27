@@ -1,0 +1,2 @@
+class LondonUsersController < ApplicationController
+end

@@ -2,14 +2,13 @@ class CitiesController < ApplicationController
 
     def index
         cities = City.all
-        render json: cities, except: [:created_at, :updated_at]
-
+        render json: cities
     end
 
     def london_users_index
         london_users = User.all.where(city_id: 1)
-        # render json: london_users, except: [:created_at, :updated_at], include: [:city]
-        render json: london_users.to_json(include: [:city], except: [:created_at, :updated_at])
+        render json: london_users, except: [:created_at, :updated_at], include: [:city] # original
+        # render json: london_users.to_json(include: [:city])
     end
 
     def london_50_mi_of_london_users_index

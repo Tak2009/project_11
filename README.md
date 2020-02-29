@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirement
+Using the language of your choice please 
+    i. build your own API which calls the API at https://bpdts-test-app.herokuapp.com/, 
+    ii. and returns 
+        a) people who are listed as either living in London,
+        b) or whose current coordinates are within 50 miles of London. 
 
-Things you may want to cover:
 
-* Ruby version
+###################################################################################################################################################################################
 
-* System dependencies
+## Brief Explanation
 
-* Configuration
+1 - I used Ruby on Rails for my own API which calls the API at https://bpdts-test-app.herokuapp.com/.
 
-* Database creation
+2 - How to use my API:
 
-* Database initialization
+    a. $ rails s to launch the web server then,
+    b. once the server has launched, open http://localhost:3000/cities/london/users for the requirement ii- a) and http://localhost:3000/cities/within_50_mi_of_london/users for the requirement ii-b)
 
-* How to run the test suite
+3 - You can find the logic to identify ii-a) and ii-b) in seed.rb as I applied it to the population of the dababase so that the controllers can render the data faster with simpler logic
 
-* Services (job queues, cache servers, search engines, etc.)
+4 - For testing purposes, I used dummy data (3 records in seed.rd. They are all commented out) to check the accuracy against Google Maps. 
+Currently the database includes only the data available at https://bpdts-test-app.herokuapp.com/. If you would like to test the logic and also would like to use the dummy data,
+please drop the databases and schema.rb then: 
 
-* Deployment instructions
+    a. $ rails db:migrate then,
+    b. $ rails db:seed.
 
-* ...
+5 - Integration testing has been performed with RSpec to confirm that GET requests work properly.

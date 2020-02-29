@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 2020_02_27_212129) do
     t.string "ip_address"
     t.float "latitude"
     t.float "longitude"
+    t.float "result"
     t.integer "city_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

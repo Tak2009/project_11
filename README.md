@@ -1,6 +1,6 @@
 ## Requirements
  
-i. Build your own API which calls the API at https://bpdts-test-app.herokuapp.com/, 
+i. Build your own API which calls the API at https://bpdts-test-app.herokuapp.com/.
 
 ii. The API should return:
 
@@ -23,8 +23,7 @@ ii. The API should return:
 3 - You can find the logic for ii-a) and ii-b) in seed.rb as I applied it to the database seeding process so that the controllers can render the data faster with simpler logic
 
 4 - For testing purposes, I used dummy data (3 records in seed.rd. They are all commented out) to check the accuracy against Google Maps. 
-Currently the database includes only the data available at https://bpdts-test-app.herokuapp.com/. If you would like to test the logic and also would like to use the dummy data,
-please drop the databases and schema.rb and run the following commands:
+Currently the database includes only the data available at https://bpdts-test-app.herokuapp.com/. If you would like to test the logic and also would like to use the dummy data, please drop the databases and schema.rb and run the following commands:
 
     a. $ rails db:migrate
     b. $ rails db:seed.

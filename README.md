@@ -19,7 +19,7 @@ Using the language of your choice please
     a. $ rails s to launch the web server then,
     b. once the server has launched, open http://localhost:3000/cities/london/users for the requirement ii- a) and http://localhost:3000/cities/within_50_mi_of_london/users for the requirement ii-b)
 
-3 - You can find the logic to identify ii-a) and ii-b) in seed.rb as I applied it to the population of the dababase so that the controllers can render the data faster with simpler logic
+3 - You can find the logic for ii-a) and ii-b) in seed.rb as I applied it to the database seeding process so that the controllers can render the data faster with simpler logic
 
 4 - For testing purposes, I used dummy data (3 records in seed.rd. They are all commented out) to check the accuracy against Google Maps. 
 Currently the database includes only the data available at https://bpdts-test-app.herokuapp.com/. If you would like to test the logic and also would like to use the dummy data,

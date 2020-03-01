@@ -76,7 +76,7 @@ def calc_distance(lat1, lng1, lat2, lng2)
 end
 
 
-# dummy data for checking the distance calc function against google map
+# dummy data for checking the distance calc function against google maps
 # u1001 = User.create(:user_id => 1001, :first_name => "Huddersfield", :last_name => "Station", :latitude => 53.648557, :longitude => -1.784449, :city_id => 3) 
 # u1002 = User.create(:user_id => 1002, :first_name => "Great Portland", :last_name => "Station", :latitude => 51.524262, :longitude => -0.143772, :city_id => 3)
 # u1003 = User.create(:user_id => 1003, :first_name => "East Ilsley", :last_name => "", :latitude => 51.533576, :longitude => -1.289984, :city_id => 3)

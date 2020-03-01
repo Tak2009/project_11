@@ -17,7 +17,7 @@ ii. The API should return:
 2 - How to use my API:
 
     a. $ rails s to launch the web server.
-    b. Once the server has launched, open http://localhost:3000/cities/london/users for the requirement ii- a)
+    b. Once the server has launched, open http://localhost:3000/cities/london/users for the requirement ii-a)
        and http://localhost:3000/cities/within_50_mi_of_london/users for the requirement ii-b).
 
 3 - You can find the logic for ii-a) and ii-b) in seed.rb as I applied it to the database seeding process so that the controllers can render the data faster with simpler logic

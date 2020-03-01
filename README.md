@@ -8,7 +8,7 @@ ii. and returns:
     b) or whose current coordinates are within 50 miles of London. 
 
 
-###################################################################################################################################################################################
+####################################################################################################################################################################################################
 
 ## Brief Explanation
 
@@ -17,7 +17,8 @@ ii. and returns:
 2 - How to use my API:
 
     a. $ rails s to launch the web server then,
-    b. once the server has launched, open http://localhost:3000/cities/london/users for the requirement ii- a) and http://localhost:3000/cities/within_50_mi_of_london/users for the requirement ii-b)
+    b. once the server has launched, open http://localhost:3000/cities/london/users for the requirement ii- a)
+    and http://localhost:3000/cities/within_50_mi_of_london/users for the requirement ii-b)
 
 3 - You can find the logic for ii-a) and ii-b) in seed.rb as I applied it to the database seeding process so that the controllers can render the data faster with simpler logic
 
